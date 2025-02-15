@@ -42,6 +42,12 @@ public class StreamComplexExample {
 
         System.out.println(email);
 
+              //  List<String> words = Arrays.asList("apple","banana","cherry");
+// collecct the length of all the string in the list and sum the result
+int totalLenght= words.stream().
+        collect(Collectors.mapping(String::length,Collectors.summingInt(Integer::intValue)));
+        System.out.println(totalLenght);
+
 
     }
 }
